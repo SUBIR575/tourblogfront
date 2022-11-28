@@ -26,7 +26,6 @@ const UserBlogCard = ({
   const deleteHandle =(id)=>{
     dispatch(deleteTour(id));
   }
-  console.log("data",data);
   return (
     <>
       <div className="blog-card">
