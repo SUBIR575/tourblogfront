@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Form, Image } from "react-bootstrap";
+import { Container, Row, Form, Image } from "react-bootstrap"; 
 import ChipInput from "material-ui-chip-input";
 import FileBase from "react-file-base64";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
-import { FormControl, InputLabel } from "@material-ui/core";
+import { FormControl } from '@mui/material';
+import Chip from '@mui/material/Chip';
 import { useDispatch, useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import * as yup from "yup";
