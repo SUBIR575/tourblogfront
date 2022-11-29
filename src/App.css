@@ -913,3 +913,19 @@ h6 {
 .lightMode .blog-card-body h4{
   color: #000;
 }
+.react-tagsinput-remove {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid;
+  text-align: center;
+  margin-left: 3px;
+  border-radius: 50%;
+  background-color: #c4c6c8;
+}
+.form-label{
+  margin-bottom: 0.2rem!important;
+}
+.react-tagsinput-tag a::before{
+  padding-right: 3px;
+}
