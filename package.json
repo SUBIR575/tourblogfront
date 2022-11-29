@@ -57,9 +57,7 @@
       "last 1 safari version"
     ]
   },
-  "peerDependencies": {
-    "@babel/core": "^7.0.0"
-  },
+  
   "devDependencies": {
     "sass": "^1.55.0"
   }
