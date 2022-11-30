@@ -870,8 +870,14 @@ h5,
 h6 {
   color: #ffffff;
 }
-.darkMode .ql-snow .ql-editor h2,h1,h2,h3,h4,h5,h6 {
+.darkMode .ql-editor h1,h2,h3{
   color: #000;
+}
+.darkMode .thumbs-up{
+  color: #fff;
+}
+.darkMode .section-title h3{
+  color: #fff;
 }
 .darkMode a {
   color: #ffffff;
@@ -889,6 +895,9 @@ h6 {
 }
 .darkMode .blog-card-body p {
   color: #b0acac;
+}
+.darkMode .delete{
+  color:#fff
 }
 .darkMode .category-single1 {
   /* From https://css.glass */

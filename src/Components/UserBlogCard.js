@@ -55,7 +55,7 @@ const UserBlogCard = ({
             </div>
             <div className="user-blog-icon">
               <h5><Link to={`/edittour/${_id}`}><i class="fas fa-pencil-ruler"></i></Link></h5>
-              <h5 onClick={()=>deleteHandle(_id)}><i class="fas fa-trash"></i></h5>
+              <h5 onClick={()=>deleteHandle(_id)}><i class="fas fa-trash delete"></i></h5>
             </div>
           </div>
         </div>
