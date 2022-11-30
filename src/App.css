@@ -853,6 +853,9 @@ h6 {
 .lightMode .category-name a h4 {
   color: #070707;
 }
+.lightMode .ql-snow .ql-editor h2,h1,h2,h3,h4,h5,h6 {
+  color: #000;
+}
 
 .darkMode {
   color: #919191;
@@ -866,6 +869,9 @@ h4,
 h5,
 h6 {
   color: #ffffff;
+}
+.darkMode .ql-snow .ql-editor h2,h1,h2,h3,h4,h5,h6 {
+  color: #000;
 }
 .darkMode a {
   color: #ffffff;
@@ -924,8 +930,11 @@ h6 {
   background-color: #c4c6c8;
 }
 .form-label{
-  margin-bottom: 0.2rem!important;
+  margin: 0.5rem!important;
 }
 .react-tagsinput-tag a::before{
   padding-right: 3px;
+}
+.quill {
+  background-color: #fff;
 }
