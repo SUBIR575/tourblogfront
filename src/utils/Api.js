@@ -2,7 +2,8 @@ import axios from "axios";
 
 const Api = axios.create({
   //baseURL: "http://localhost:5000/",
-  baseURL:"https://guarded-ravine-75071.herokuapp.com/",
+  //baseURL:"https://guarded-ravine-75071.herokuapp.com/",
+  baseURL:"https://tour-backend-plgq.onrender.com/",
 });
 Api.interceptors.request.use(
   (config) => {
