@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import moment from "moment";
+import parse from 'html-react-parser'
 const BlogCard = ({
   title,
   imagefile,
@@ -45,10 +46,10 @@ const BlogCard = ({
         <div className="blog-card-body">
           {category ? <span className="tag tag-teal">{category}</span> : null}
           <Link style={{ textDecoration: "none" }} to={`/singletour/${_id}`}>
-            <h4>{title}</h4>
+            <h4 style={{fontSize:'20px'}}>{title.substring(0, 20) + "..."}</h4>
           </Link>
           <p>
-            {description.substring(0, 50) + "..."}
+            {parse(description.substring(0, 50) + "...")}
             <span
               style={{ cursor: "pointer", color: "#90b956" }}
               onClick={() => handleNavigate(_id)}

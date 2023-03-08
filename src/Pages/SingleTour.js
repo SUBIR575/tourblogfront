@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import Breadcrumb from "../Components/Breadcrumb/Breadcrumb";
 import { useParams } from "react-router-dom";
+import parse from 'html-react-parser'
 import { useDispatch, useSelector } from "react-redux";
 import {
   getReletedTours,
@@ -50,7 +51,7 @@ const SingleTour = () => {
                       : null}
                   </div>
                   <div className="blog-content">
-                    <p>{data?.description}</p>
+                    <p>{parse(data?.description)}</p>
                   </div>
                 </div>
               </div>

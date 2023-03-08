@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteTour,getToursByUser } from "../Store/TourSlice";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import parse from 'html-react-parser';
 import moment from "moment";
 
 const UserBlogCard = ({
@@ -38,9 +39,9 @@ const UserBlogCard = ({
         <h5><i className="far fa-thumbs-up">{likes.length}</i></h5>
         </div>
         <Link style={{ textDecoration: "none" }} to={`/singletour/${_id}`}>
-            <h4>{title}</h4>
+        <h4 style={{fontSize:'20px'}}>{title.substring(0, 20) + "..."}</h4>
           </Link>
-          <p>{description.substring(0, 50) + "..."}</p>
+          <p>{parse(description.substring(0, 50) + "...")}</p>
           <div className="user-blog">
             <div className="user-blog-info">
             <img
@@ -54,7 +55,7 @@ const UserBlogCard = ({
             </div>
             <div className="user-blog-icon">
               <h5><Link to={`/edittour/${_id}`}><i class="fas fa-pencil-ruler"></i></Link></h5>
-              <h5 onClick={()=>deleteHandle(_id)}><i class="fas fa-trash"></i></h5>
+              <h5 onClick={()=>deleteHandle(_id)}><i class="fas fa-trash delete"></i></h5>
             </div>
           </div>
         </div>

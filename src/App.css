@@ -853,6 +853,9 @@ h6 {
 .lightMode .category-name a h4 {
   color: #070707;
 }
+.lightMode .ql-snow .ql-editor h2,h1,h2,h3,h4,h5,h6 {
+  color: #000;
+}
 
 .darkMode {
   color: #919191;
@@ -866,6 +869,15 @@ h4,
 h5,
 h6 {
   color: #ffffff;
+}
+.darkMode .ql-editor h1,h2,h3{
+  color: #000;
+}
+.darkMode .thumbs-up{
+  color: #fff;
+}
+.darkMode .section-title h3{
+  color: #fff;
 }
 .darkMode a {
   color: #ffffff;
@@ -883,6 +895,9 @@ h6 {
 }
 .darkMode .blog-card-body p {
   color: #b0acac;
+}
+.darkMode .delete{
+  color:#fff
 }
 .darkMode .category-single1 {
   /* From https://css.glass */
@@ -912,4 +927,23 @@ h6 {
 } */
 .lightMode .blog-card-body h4{
   color: #000;
+}
+.react-tagsinput-remove {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid;
+  text-align: center;
+  margin-left: 3px;
+  border-radius: 50%;
+  background-color: #c4c6c8;
+}
+.form-label{
+  margin: 0.5rem!important;
+}
+.react-tagsinput-tag a::before{
+  padding-right: 3px;
+}
+.quill {
+  background-color: #fff;
 }
